@@ -5,10 +5,10 @@
  
  
  # Config
- --> Install dependencies for your local environment by running pip install -r requirements.txt
- --> Run python manage.py migrate
- --> SETUP BROKER_URL FROM SETTINGS 
-  --> Run python manage.py runserver
+ 1> Install dependencies for your local environment by running pip install -r requirements.txt
+ 2> Run python manage.py migrate
+ 3> SETUP BROKER_URL FROM SETTINGS 
+ 4> Run python manage.py runserver
  
 # Trigger Celery Beat For BackGround Task
  --> Open new cmd in root and use this command celery -A demos.celery beat -l INFO to fire up celery beat
