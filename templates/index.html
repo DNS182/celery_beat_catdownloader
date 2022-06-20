@@ -1,0 +1,10 @@
+{% extends 'home.html' %}
+
+{% block content %}
+<div class="images" style ='margin-top:-160px'>   
+    {% for a in images %}
+        <img src={{domain}}/static/cats/{{a.title}} style = ' width: 186px;height: 186px;float: left;padding:2px 2px;'>
+    {% endfor %}
+</div>
+
+{% endblock content %}
