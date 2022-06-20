@@ -6,8 +6,11 @@
  
  # Config
 1> Install dependencies for your local environment by running pip install -r requirements.txt
+
 2> Run python manage.py migrate
+
 3> SETUP BROKER_URL FROM SETTINGS 
+
 4> Run python manage.py runserver
  
 # Trigger Celery Beat For BackGround Task
