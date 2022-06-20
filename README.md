@@ -14,7 +14,7 @@
 --> Run python manage.py runserver
  
 # Trigger Celery Beat For BackGround Task
- --> Open new cmd in root and use this command celery -A demos.celery beat -l INFO to fire up celery beat
+ --> Open new cmd in root and use this command celery -A demos.celery beat -l INFO to fire up celery beat(This Triggers CeleryBeat Which Executes on Every minutes)
  
  --> Open new cmd in root and use this command celery -A demos.celery worker --pool=solo -l info to fire up a celery worker(Can be used Only to Download Image when HomePage is Refreshed)
 
