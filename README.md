@@ -5,16 +5,17 @@
  
  
  # Config
-1> Install dependencies for your local environment by running pip install -r requirements.txt
+--> Install dependencies for your local environment by running pip install -r requirements.txt
 
-2> Run python manage.py migrate
+--> Run python manage.py migrate
 
-3> SETUP BROKER_URL FROM SETTINGS 
+--> SETUP BROKER_URL FROM SETTINGS 
 
-4> Run python manage.py runserver
+--> Run python manage.py runserver
  
 # Trigger Celery Beat For BackGround Task
  --> Open new cmd in root and use this command celery -A demos.celery beat -l INFO to fire up celery beat
+ 
  --> Open new cmd in root and use this command celery -A demos.celery worker --pool=solo -l info to fire up a celery worker(Can be used Only to Download Image when HomePage is Refreshed)
 
 # SOME GLIMPSE OF PAGE : 
